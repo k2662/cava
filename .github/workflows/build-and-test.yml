@@ -61,3 +61,6 @@ jobs:
       run: ./cava -p example_files/test_configs/non_zero_test > /dev/null
     - name: run portaudio test
       run: ./cava -p example_files/test_configs/portaudio_zero_test > /dev/null
+    - uses: actions/upload-artifact@v3.1.3
+      with:
+        path: ./
